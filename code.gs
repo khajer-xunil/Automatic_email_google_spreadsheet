@@ -55,7 +55,7 @@ function myFunction() {
 
       const htmlForEmail = htmlTemplate.evaluate().getContent();
       console.log(htmlForEmail);  
-      GmailApp.sendEmail("customs.brno@amtech.cz","Casambi Overview"+ " " + today, "OPEN with a client",{ htmlBody: htmlForEmail });
+      GmailApp.sendEmail("email","Email subject"+ " " + today, "OPEN with a client",{ htmlBody: htmlForEmail });
     }
     // HTML template if count date is "0"
     else{
